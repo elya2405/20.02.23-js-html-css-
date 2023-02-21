@@ -20,5 +20,14 @@ let example5 = document.querySelector("p:nth-child(4)");
 example5.textContent = "i'm good "; // заменить текст
 console.log(example5);
 
-let example6 = document.querySelector("p:nth-child(5)");
-example6.style.margin = "40px";
+let example6 = document.querySelectorAll("article p");
+for (let i = 0; i < example6.length; i++) {
+  let paragraph = example6[i];
+  paragraph.textContent += "💖";
+}
+//example6.style.margin = "40px";
+
+//как создавать элементы в js
+let example7 = document.createElement("p");
+example7.textContent = "lorem ipsum";
+document.body.append(example7);
