@@ -35,10 +35,21 @@ document.body.append(example7); // append добавить элемент в к�
 example1.append(example7);
 
 let example8 = document.createElement("ul");
+example8.className = "example-8"; // связываем с css
 document.body.prepend(example8);
 for (let i = 1; i <= 10; i++) {
   let listItem = document.createElement("li");
   listItem.textContent = "example" + i;
+  listItem.style.color = "red";
   example8.append(listItem);
 }
 example8.style.listStyleType = "none";
+
+let fruits = ["apple", "pear", "orange", "banana"];
+let example9 = document.createElement("ul");
+document.body.prepend(example9);
+for (let i = 0; i < fruits.length; i++) {
+  let listItem2 = document.createElement("li");
+  listItem2.textContent = fruits[i];
+  example9.append(listItem2);
+}
