@@ -13,8 +13,12 @@ console.log(example3);
 
 let example4 = document.querySelector("#example-4");
 example4.textContent += "don't care"; // короткая версия добавить текст
+example4.style.backgroundColor = "grey"; // фон
 console.log(example4);
 
 let example5 = document.querySelector("p:nth-child(4)");
 example5.textContent = "i'm good "; // заменить текст
 console.log(example5);
+
+let example6 = document.querySelector("p:nth-child(5)");
+example6.style.margin = "40px";
