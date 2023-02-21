@@ -3,10 +3,12 @@ console.log(example1);
 
 let example2 = document.querySelector("P");
 example2.textContent = "hello world";
+example2.style.color = "tomato"; // изменили цвет текста
 console.log(example2);
 
 let example3 = document.querySelector(".example-3");
 example3.textContent = example3.textContent + "bye"; //добавить текст
+example3.style.fontSize = "20px"; // изменили размер текста
 console.log(example3);
 
 let example4 = document.querySelector("#example-4");
