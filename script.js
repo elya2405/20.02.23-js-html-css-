@@ -9,3 +9,6 @@ console.log(example3);
 
 let example4 = document.querySelector("#example-4");
 console.log(example4);
+
+let example5 = document.querySelector("p:nth-child(4)");
+console.log(example5);
