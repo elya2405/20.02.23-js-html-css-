@@ -30,4 +30,15 @@ for (let i = 0; i < example6.length; i++) {
 //как создавать элементы в js
 let example7 = document.createElement("p");
 example7.textContent = "lorem ipsum";
-document.body.append(example7);
+document.body.append(example7); // append добавить элемент в конце, prepend добавляет в начало, добавляется только один элемент
+
+example1.append(example7);
+
+let example8 = document.createElement("ul");
+document.body.prepend(example8);
+for (let i = 1; i <= 10; i++) {
+  let listItem = document.createElement("li");
+  listItem.textContent = "example" + i;
+  example8.append(listItem);
+}
+example8.style.listStyleType = "none";
