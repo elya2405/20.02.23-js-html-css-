@@ -53,3 +53,5 @@ for (let i = 0; i < fruits.length; i++) {
   listItem2.textContent = fruits[i];
   example9.append(listItem2);
 }
+
+example9.remove(); // удаляем элемент
